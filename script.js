@@ -7,3 +7,8 @@ require(['vs/editor/editor.main'], function() {
         theme: 'vs-dark'
     });
 });
+window.editor = monaco.editor.create(document.getElementById('editor'), {
+  value: `function hello() {\n\tconsole.log("Hello, world!");\n}`,
+  language: 'javascript',
+  theme: 'vs-dark'
+});
